@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient( #02F0DC, #75E7EB, #75EBD9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.kalkulator {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 400px;
+}
+.Screen {
+  color: #fff;
+  text-align: right;
+  font-size: 56px;
+  border: none;
+  padding: 0 20px;
+  height: 130px;
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+button,
+#Persen {
+  background-color: transparent;
+  border: 1px solid white;
+  /* border-radius: 60px; */
+  color: #fff;
+  font-size: 32px;
+  height: 80px;
+  outline: none;
+  width: 25%;
+}
+button:hover {
+  background-color: darkgray;
+}
+#Persen:hover {
+  background-color: darkgray;
+}
+.Zero,
+.ClearAll {
+  width: 50%;
+}
+.Operator,
+.Equal-Sign {
+  background-color: transparent;
+}
+.Operator:hover,
+.Equal-Sign:hover,
+.Operator:focus,
+.Equal-Sign:focus {
+  background-color: #81E36B;
+}
